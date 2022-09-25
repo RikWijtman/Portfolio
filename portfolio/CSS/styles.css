@@ -1,0 +1,95 @@
+
+
+body {
+    margin: 200px;
+    background-color: #e5e5e5;
+  }
+  
+  h1 {
+    font-size: 50px;
+    
+    border-style: double;
+    border-width: 10px;
+    border-radius: 5px;
+    
+    display: inline-block;
+  }
+  
+  li {
+    font-size: 20px;
+  }
+  
+  #Menu {
+    font-size: 30px;
+    color:white;
+    margin-left:50px;
+  }
+  
+  #Links {
+    font-size: 30px;
+  }
+  
+  div {
+    background-color:crimson;
+    margin-left:-200px;
+    margin-right:-200px;
+    margin-top:-200px;
+    height:128px;
+  }
+  
+  .NH {
+    color:white;
+    padding-left:20px;
+    font-size:20px;
+    display:block;
+    padding:10px;
+  }
+  
+  .NH:hover {
+    background-color:darkred;
+    padding-left:30px;
+    transition: padding-left 0.4s;
+    transition: background-color 0.4s;
+    border-style: double;
+    border-color: crimson;
+  }
+  
+  footer {
+    background-color:crimson;
+    margin-left:-200px;
+    margin-right:-200px;
+    margin-bottom:-200px;
+    height:128px;
+  }
+  
+  .Links {
+    color:white;
+    padding-left:20px;
+    font-size:20px;
+    display:block;
+    padding:10px;
+  }
+  
+  .Links:hover {
+    background-color:darkred;
+    padding-left:30px;
+    transition: padding-left 0.4s;
+    transition: background-color 0.4s;
+    border-style: double;
+    border-color: crimson;
+  }
+  
+  article {
+    height:550px;
+  }
+  
+  .Choose {
+    color:Black;
+  }
+
+  aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+  }
