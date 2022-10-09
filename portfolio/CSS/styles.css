@@ -1,0 +1,90 @@
+body {
+  background-color: #e5e5e5;  
+  margin:0px;
+}
+
+h1 {
+  font-size:50;
+  size: 80%;
+  
+  border-style: double;
+  border-width: 10px;
+  border-radius: 5px;
+  
+  display: inline-block;
+}
+
+li {
+  font-size: 20px;
+}
+
+#Links {
+  font-size: 30px;
+}
+
+.LISI {
+  background-color:crimson;
+  height:130px;
+  width:100%;
+}
+
+.NH {
+  color:white;
+  padding-left:20px;
+  font-size:20px;
+  display:block;
+  padding:10px;
+}
+
+.NH:hover {
+  background-color:darkred;
+  padding-left:30px;
+  transition: padding-left 0.4s;
+  transition: background-color 0.4s;
+  border-style: double;
+  border-color: crimson;
+}
+
+footer {
+  background-color:crimson;
+  height:128px;
+  width: 100%;
+}
+
+.Links {
+  color:white;
+  padding-left:20px;
+  font-size:20px;
+  display:block;
+  padding:10px;
+}
+
+.Links:hover {
+  background-color:darkred;
+  padding-left:30px;
+  transition: padding-left 0.4s;
+  transition: background-color 0.4s;
+  border-style: double;
+  border-color: crimson;
+}
+
+
+
+.Choose {
+  color:Black;
+}
+
+.Text {
+  size:80%
+}
+
+main {
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom: 5%;
+}
+
+.img {
+  display:block;
+  width: 300px;
+}
