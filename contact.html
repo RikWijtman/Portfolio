@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact forum</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/Region.css">
 </head>
 <body>
     <nav target="_blank">
-        <a class="NH" href="Region.html" style="text-decoration:none">Back</a>
+        <div class="RegionLISI">
+            <a class="NH" href="Region.html" style="text-decoration:none">Back</a>
+        </div>
     </nav>
 
     <canvas id="myCanvasTop">
@@ -21,7 +24,7 @@
     // Create gradient
     var grd = ctx.createLinearGradient(0,0,0,30);
     grd.addColorStop(0,"crimson");
-    grd.addColorStop(1,"#e5e5e5");
+    grd.addColorStop(1,"transparent");
     // Fill with gradient
     ctx.fillStyle = grd;
     ctx.fillRect(0,0,300,200);
@@ -43,7 +46,7 @@
         <select class="IB" name="category">
             <option value="0">Vraag</option>
             <option value="1">Idee</option>
-            <option value="2">Tip</option>
+            <option value="2">Nieuwe pokemon</option>
         </select>
         <br>
         <label class="label text" for="invulvak">Invulvak:</label>

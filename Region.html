@@ -4,35 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zeres region</title>
     <link rel="stylesheet" href="CSS/Region.css">
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <nav target="_blank">
-        <a class="NH" href="index.html" style="text-decoration:none">Back</a>
-        <a class="NH" href="contact.html" style="text-decoration:none">Contact</a>
+        <div class="RegionLISI">
+            <a class="NH" href="index.html" style="text-decoration:none">Back</a>
+            <a class="NH" href="contact.html" style="text-decoration:none">Contact</a>
+        </div>
     </nav>
-
-    <canvas id="myCanvasTop">
-    </canvas>
-        
-    <script>
-    var c = document.getElementById("myCanvasTop");
-    var ctx = c.getContext("2d");
-    // Create gradient
-    var grd = ctx.createLinearGradient(0,0,0,30);
-    grd.addColorStop(0,"crimson");
-    grd.addColorStop(1,"#e5e5e5");
-    // Fill with gradient
-    ctx.fillStyle = grd;
-    ctx.fillRect(0,0,300,200);
-    </script>
 
     <main>
 
     <Header>
-        <h1>
+        <h1 class="RN">
             De Zeres Region
         </h1>
         
@@ -73,66 +60,66 @@
         <h2 id="DP" class="strong"> De pokemon </h2>
 
         <article class="Pokemon">
-            <div class="TnI">
-                <img class="imgx reg" src="RegionImages/GrassStarter.png" alt="Frogage">
-                <p class="Textx 1 Frogage">
-                    #1 Frogage: The Forest frog pokemon.<br>
-                    Frogage help the town people with collecting and chopping their wood, 
-                    but since they're very small they are still learning the technique.<br>
-                    
-                    Type: Grass<br>
-                    Ability: Overgrow<br>
-                    Height: 0.4m<br>
-                    Weight: 14kg<br>
-                    Evolutions: N/A<br>
-                </p>
-            </div>
-            
-            <div class="TnI">
-                <img class="imgx reg" src="RegionImages/FireStarter.png" alt="Armaco">
-                <p class="Textx 1 Armaco">
-                    #4 Armaco: The small armadillo pokemon.<br>
-                    The big "Spheres" on Armaco's body seems to be some sort of firm armor made out of skin, 
-                    scientists found out the armor is filled with Extremely hot gasses that can make you relax.<br>
-                    
-                    Type: Fire<br>
-                    Ability: Blaze and Shell armor<br>
-                    Height: 0.5m<br>
-                    Weight: 11kg<br>
-                    Evolutions: N/A<br>
-                </p>
-            </div>
-            
-            <div class="TnI">
-                <img class="imgx reg" src="RegionImages/WaterStarter.png" alt="Ottiree">
-                <p class="Textx 1 Ottiree">
-                    #7 Ottiree: The otter like pokemon.<br>
-                    Many people believe Ottiree Descended from Oshawott and Buizel, 
-                    although a few years back scientists found out they are more close related to dragons than from otter like pokemon.<br>
-                    
-                    Type: Water<br>
-                    Ability: Torrent and Rain dish<br>
-                    Height: 0.5m<br>
-                    Weight: 16kg<br>
-                    Evolutions: N/A<br>
-                </p>
-            </div>
-            
+            <div class="Starters">
+                <div class="TnI">
+                    <img class="imgx reg pokemon" src="RegionImages/GrassStarter.png" alt="Frogage">
+                    <p class="Textx 1 Frogage">
+                        #1 Frogage: The Forest frog pokemon.<br>
+                        Frogage help the town people with collecting and chopping their wood, 
+                        but since they're very small they are still learning the technique.<br>
+                        
+                        Type: Grass<br>
+                        Ability: Overgrow<br>
+                        Height: 0.4m<br>
+                        Weight: 14kg<br>
+                        Evolutions: N/A<br>
+                    </p>
+                </div>
+                
+                <div class="TnI">
+                    <img class="imgx reg pokemon" src="RegionImages/FireStarter.png" alt="Armaco">
+                    <p class="Textx 1 Armaco">
+                        #4 Armaco: The small armadillo pokemon.<br>
+                        The big "Spheres" on Armaco's body seems to be some sort of firm armor made out of skin, 
+                        scientists found out the armor is filled with Extremely hot gasses that can make you relax.<br>
+                        
+                        Type: Fire<br>
+                        Ability: Blaze and Shell armor<br>
+                        Height: 0.5m<br>
+                        Weight: 11kg<br>
+                        Evolutions: N/A<br>
+                    </p>
+                </div>
+                
+                <div class="TnI">
+                    <img class="imgx reg pokemon" src="RegionImages/WaterStarter.png" alt="Ottiree">
+                    <p class="Textx 1 Ottiree">
+                        #7 Ottiree: The otter like pokemon.<br>
+                        Many people believe Ottiree Descended from Oshawott and Buizel, 
+                        although a few years back scientists found out they are more close related to dragons than from otter like pokemon.<br>
+                        
+                        Type: Water<br>
+                        Ability: Torrent and Rain dish<br>
+                        Height: 0.5m<br>
+                        Weight: 16kg<br>
+                        Evolutions: N/A<br>
+                    </p>
+                </div>
+            </div>          
         </article>
             
 
         <h2 id="ET" class="strong"> Evil team </h2>
-        Een van de meest gevreesde teams van de Zeres region is team zap. 
-        Team zap heeft zich onderverdeelt in meerdere groepen, 
-        van A tot F en dan nog het hoofd team. 
-        Elk team heeft een bijbehoorend rijk die ze moeten ontdekken, 
-        zo heeft team A de aarde, team B "The isles", team C "The heat" Etc. 
-        Elk team heft hun eigen leider en die leiders hebben allemaal weer één hogere leider, 
-        de leider van het hoofdteam. 
-        Team zap wil elke "Protector" van alle rijken vangen, 
-        de reden hiervoor is nog onbekend.
         <p class="Text 2"> 
-
+            Een van de meest gevreesde teams van de Zeres region is team zap. 
+            Team zap heeft zich onderverdeelt in meerdere groepen, 
+            van A tot F en dan nog het hoofd team. 
+            Elk team heeft een bijbehoorend rijk die ze moeten ontdekken, 
+            zo heeft team A de aarde, team B "The isles", team C "The heat" Etc. 
+            Elk team heft hun eigen leider en die leiders hebben allemaal weer één hogere leider, 
+            de leider van het hoofdteam. 
+            Team zap wil elke "Protector" van alle rijken vangen, 
+            de reden hiervoor is nog onbekend.
         </p>
 
         <h2 id="S" class="strong"> Specials </h2>       

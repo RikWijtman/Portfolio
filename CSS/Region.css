@@ -1,13 +1,3 @@
-nav {
-    background-color: crimson;
-}
-nav img {   
-    max-width: 5%;
-    height:auto;
-    padding-left: 0.5%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-}
 .imgx.reg {
     border-style: solid;
     border-radius: 5px;
@@ -20,10 +10,16 @@ nav img {
         flex-direction: column;
     }
 }  
-.Pokemon {
+.Starters {
     display: flex;
     justify-content: space-between;
     font-family: 'Silkscreen', cursive;
+    flex-direction: row;
+}
+@media only screen and (max-width: 1000px) {
+    .Starters {
+        flex-direction: column;
+    }
 }
 .Textx {
     background-color: #bababa;
@@ -33,20 +29,37 @@ nav img {
 }
 .TnI {
     display:block;
+    text-align:center;
 }
 .imgx {
     display:block;
     width: 90%;
 }
 .map {
-    width:70%
+    width:70%;
 }
 .text {
     font-size: 3em;
 }
-.IB {
+@media only screen and (max-width: 600px) {
+    .text {
+        font-size: 2em;
+    }
+    .IB {
+        width: 200px;
+    }
+}
+.IB, .strong {
     font-size: 2em;
 }
-.strong {
-    font-size: 2em;
+.RegionLISI {
+    position: fixed;
+    background-color: crimson;
+    width: 100%;
+}
+.RN {
+    margin-top: 150px;
+}
+.imgx.reg.pokemon:hover {
+    transform: scale(1.6, 1.6);
 }
