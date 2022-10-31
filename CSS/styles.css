@@ -105,6 +105,9 @@ li, .dankuwel, .Links, .NH {
   h1, li, p, #Choose, h2 {
     color: rgb(151, 151, 151);
   }
+  h1 {
+    border-color: black;
+  }
   .IB {
     color: rgb(35, 35, 35);
   }
