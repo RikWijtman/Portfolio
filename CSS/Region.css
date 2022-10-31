@@ -8,23 +8,28 @@ nav img {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
-body {
-    margin:0px;
-}
 .imgx.reg {
     border-style: solid;
     border-radius: 5px;
     border-color: crimson;
 }
+@media only screen and (max-width: 600px) {    
+    .Pokemon {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}  
 .Pokemon {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
+    font-family: 'Silkscreen', cursive;
 }
 .Textx {
-    width: 100%;
     background-color: #bababa;
     border-style: solid;
     border-color: #898989;
+    width:90%;
 }
 .TnI {
     display:block;
@@ -35,4 +40,13 @@ body {
 }
 .map {
     width:70%
+}
+.text {
+    font-size: 3em;
+}
+.IB {
+    font-size: 2em;
+}
+.strong {
+    font-size: 2em;
 }

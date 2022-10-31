@@ -10,8 +10,24 @@
 </head>
 <body>
     <nav target="_blank">
-        <a class="NH" href="index.html">Back</a>
+        <a class="NH" href="index.html" style="text-decoration:none">Back</a>
+        <a class="NH" href="contact.html" style="text-decoration:none">Contact</a>
     </nav>
+
+    <canvas id="myCanvasTop">
+    </canvas>
+        
+    <script>
+    var c = document.getElementById("myCanvasTop");
+    var ctx = c.getContext("2d");
+    // Create gradient
+    var grd = ctx.createLinearGradient(0,0,0,30);
+    grd.addColorStop(0,"crimson");
+    grd.addColorStop(1,"#e5e5e5");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(0,0,300,200);
+    </script>
 
     <main>
 
@@ -21,21 +37,25 @@
         </h1>
         
         <ul>
-            <li> <a href="#DR" class="Choose"> De region </a>
-            <li> <a href="#DP" class="Choose"> De pokemon </a>
-            <li> <a href="#ET" class="Choose"> Evil Team </a>
-                <li> <a href="#S" class="Choose"> Specials </a>
-            </ul> 
+            <li> <a href="#DR" class="Choose" style="text-decoration:none"> De region </a>
+            <li> <a href="#DP" class="Choose" style="text-decoration:none"> De pokemon </a>
+            <li> <a href="#ET" class="Choose" style="text-decoration:none"> Evil Team </a>
+            <li> <a href="#S" class="Choose" style="text-decoration:none"> Specials </a>
+        </ul> 
     </Header>
 
     <article>
 
-        <h2 id="DR"> De region </h2>
+        <h2 id="DR" class="strong"> De region </h2>
         <p class="Text 0 map">
             Welkom in de Zeres region, een vrij kleine maar natuurrijke regio vol met wonderbaarlijke wezens genaamd pokemon.
             In deze regio vind je veel oude maar ook nieuwe pokemon die alleen te vinden zijn in onze regio.
             Onze professor Hawthorn en zijn medewerkers zal onze prachtigge regio van top tot teen laten zien.
         </p>   
+        <p class="Text 0 map">
+            De regio is een lange tijd geleden gemaakt door een eeuwen oude samenleving die wij de captilis noemen.
+            Zij hebben de vijf portalen naar de vijf anderen rijken gemaakt.
+        </p>  
         <img class="imgx reg map" src="RegionImages/Regionmap.png" alt="Regionalmap">
         <p class="Text 0 map">
             Professor Hawthorn doet onderzoek naar een fenoneem genaamd realm traveling.
@@ -50,7 +70,7 @@
         </p>  
         <img class="imgx reg map" src="RegionImages/Realms.png" alt="Realms">
     
-        <h2 id="DP"> De pokemon </h2>
+        <h2 id="DP" class="strong"> De pokemon </h2>
 
         <article class="Pokemon">
             <div class="TnI">
@@ -73,7 +93,7 @@
                 <p class="Textx 1 Armaco">
                     #4 Armaco: The small armadillo pokemon.<br>
                     The big "Spheres" on Armaco's body seems to be some sort of firm armor made out of skin, 
-                    scientist found out the armor is filled with Extremely hot gasses that can make you relax.<br>
+                    scientists found out the armor is filled with Extremely hot gasses that can make you relax.<br>
                     
                     Type: Fire<br>
                     Ability: Blaze and Shell armor<br>
@@ -88,7 +108,7 @@
                 <p class="Textx 1 Ottiree">
                     #7 Ottiree: The otter like pokemon.<br>
                     Many people believe Ottiree Descended from Oshawott and Buizel, 
-                    although a few years back scientist found out they are more close related to dragons than from otter like pokemon.<br>
+                    although a few years back scientists found out they are more close related to dragons than from otter like pokemon.<br>
                     
                     Type: Water<br>
                     Ability: Torrent and Rain dish<br>
@@ -101,12 +121,21 @@
         </article>
             
 
-        <h2 id="ET"> Evil team </h2>
+        <h2 id="ET" class="strong"> Evil team </h2>
+        Een van de meest gevreesde teams van de Zeres region is team zap. 
+        Team zap heeft zich onderverdeelt in meerdere groepen, 
+        van A tot F en dan nog het hoofd team. 
+        Elk team heeft een bijbehoorend rijk die ze moeten ontdekken, 
+        zo heeft team A de aarde, team B "The isles", team C "The heat" Etc. 
+        Elk team heft hun eigen leider en die leiders hebben allemaal weer één hogere leider, 
+        de leider van het hoofdteam. 
+        Team zap wil elke "Protector" van alle rijken vangen, 
+        de reden hiervoor is nog onbekend.
         <p class="Text 2"> 
 
         </p>
 
-        <h2 id="S"> Specials </h2>       
+        <h2 id="S" class="strong"> Specials </h2>       
         <p class="Text 3"> 
 
         </p>
