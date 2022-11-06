@@ -10,7 +10,9 @@
 </head>
 <body>
     <nav target="_blank">
-        <a class="NH" href="Region.html">Back</a>
+        <div class="RegionLISI">
+            <a class="NH" href="Region.html">Back</a>
+        </div>
     </nav>
 
     <canvas id="myCanvasTop">
@@ -19,11 +21,9 @@
     <script>
     var c = document.getElementById("myCanvasTop");
     var ctx = c.getContext("2d");
-    // Create gradient
     var grd = ctx.createLinearGradient(0,0,0,30);
     grd.addColorStop(0,"crimson");
-    grd.addColorStop(1,"#e5e5e5");
-    // Fill with gradient
+    grd.addColorStop(1,"transparent");
     ctx.fillStyle = grd;
     ctx.fillRect(0,0,300,200);
     </script>
