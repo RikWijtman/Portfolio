@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    
+    <nav>      
+        <div class="navTop">
+        <a href="#naam" class="links" style="text-decoration:none">Home</a>
+        <a href="#intro" class="links" style="text-decoration:none">Article</a>
+        <a href="#links" class="links" style="text-decoration:none">Links</a>
+        </div>
+    </nav>
+
+    <main>
+    
+    <header>
+        <h1 id="naam">Rik Wijtman</h1>
+    
+        <ul>
+          <li> <a class="text inhoud" style="text-decoration:none"> Introductie </a>
+          <li> <a class="text inhoud" style="text-decoration:none"> Mijn Hobbies </a>
+          <li> <a class="text inhoud" style="text-decoration:none"> Wat wil ik leren </a>
+          <li> <a class="text inhoud" style="text-decoration:none"> Wat heb ik geleerd </a>
+          <li> <a class="text inhoud" style="text-decoration:none"> Mijn projecten </a>
+        </ul>
+
+        <div>
+            <img class="image" src="https://source.unsplash.com/300x300/?Capybara" alt="Capybara">
+        </div>
+    </header>
+
+    <article>
+        <h2 id="intro" class="subtitel"> Introductie </h2>
+        <p class="text">
+            Goedenmorgen allemaal, ik ben Rik Wijtman momenteel 16 Jaar oud, <br>
+            Ik zit op de Hogenschool Rotterdam en doe de studie Creative Media en Game Technologies(CMGT)
+        </p>   
+
+        <h2 id="hobbies" class="subtitel"> Mijn hobbies </h2>
+        <p class="text">
+            Ik heb vele hobbies onder andere tekenen, tennissen en games ontwerpen. 
+            Ik Teken vooral Pokemon en horror wezens, deze zijn te zien op mijn instagram en tiktok. 
+            Ik zit momenteel zes jaartjes op tennis en kan er nogsteeds vrij weinig van,
+            Ik doe dit elke donderdag avond met een groepje vrienden.
+            Ik heb vorig jaar mijn eerste game ontworpen, het heet Turtlecrab,
+            het is een simpele platformer met als einde een boss battle.
+            De game is helaas nooit uitgebracht op steam of andere websites.
+            Mijn andere hobbies zijn duiken, bowlen en gamen.
+            Ik ben momenteel ook bezig met het maken van een eigen clothing line,
+            deze kan je kopen op mijn website:...
+        </p>
+    
+        <h2 id="leren" class="subtitel"> Wat wil ik leren </h2>
+        <p class="text"> Ik wil graag tijdens deze opleiding leren om nog beter te programeren
+            en games te kunnen ontwerpen. Ik hoop tijdens deze opleiding met een paar mede studenten
+            een game te ontwerpen die ook echt te downloaden is op steam.
+            Het is me nu al gelukt om Pokemon te programeren op de adafruit playground,
+            dus ik durf te wedden dat een echte game maken ook moet lukken.
+        </p>
+
+        <h2 id="geleerd" class="subtitel"> Wat heb ik geleerd </h2>
+        <p class="text"> Tijdens de opleiding heb ik drie vakken gehad: Programeren, Front end development en ontwerpen. 
+            Bij programeren werken we met een circuit playground waarop je met javascript kan programeren, 
+            zo heb ik tijdens dit vak veel javascript geleerd zoals arrays en mapping.
+            Front end development was toch wel mijn lastigste vak aangezien ik niks van HTML en CSS wist,
+            zo heb ik hier geleerd hoe je je website opdeelt in verschilende gedeeltes, 
+            hoe je flex gebruikt en hoe je css in koppeling werkt met de html.
+            Bij ontwerpen leer je vooral over het proces van het maken van een product, 
+            zo heb ik geleerd hoe je het best het maken van een product kan aanpakken en in welke stappen.
+        </p>
+
+        <h2 id="projecten" class="subtitel"> Mijn projecten </h2>
+        <p class="text"> In de eerste periode ben ik met een groep bezig geweest met het maken van deze wekker
+        </p>
+        <img class="image" src="Images/Kat.jpeg" alt="Katproject">
+        <p class="text"> Met de knoppen A en B kan je de tijd selecteren hoelang de wekker moet staan.
+            Wanneer je lang op A klikt gaat de wekker aan en op AB gaat de wekker uit, 
+            ook kan je de modus van de wekker veranderen met lang B ingedrukt houden zo veranderd het geluid en de kleur van de ledjes. 
+            Het ontwerp is afgeleid van een lucky cat, en je kan zelfs het hoofd er af halen en verwisselen met andere hoofden zoals een halloween of kerst hoofd.
+        </p>
+    </article>
+
+
+    
+    </main>  
+      
+    <canvas id="myCanvasBottom">
+    </canvas>
+        
+    <script>
+    var c = document.getElementById("myCanvasBottom");
+    var ctx = c.getContext("2d");
+    var grd = ctx.createLinearGradient(0,30,0,0);
+    grd.addColorStop(0,"crimson");
+    grd.addColorStop(1,"transparent");
+    ctx.fillStyle = grd;
+    ctx.fillRect(0,0,300,200);
+    </script>
+
+    <footer>
+        <div class="contact" target="_blank">
+            <a class="links" href="Region.html" style="text-decoration:none"> Mijn pokemon region </a>
+            <a class="links" href="https://www.instagram.com/anonymousk1w1/" style="text-decoration:none"> Instagram </a>
+            <a class="links" href="contact.html" style="text-decoration:none">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
