@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+main {
+  margin-left:220px;
+  margin-right:220px;
+  margin-bottom: 50px;
+}
 body {
-  background-color: #e5e5e5;  
+  background-color: #d7d3d3;  
   margin:0px;
   font-family: 'Signika Negative', sans-serif;
-  font-size: 24px;
+  font-size: 12px;
+}
+.navTop {
+  background-color:crimson;
+  width:190px;
+  height: 100%;
+  position:fixed;
 }
 h1 {
-  font-size:3em;
-  size: calc(80% - 50px);
+  display: block;
+  font-size:5em;
+  display:inline-block;
   
   border-style: double;
   border-width:18px;
   border-radius: 5px;
-  
-  display: inline-block;
 }
-.LISI {
-  background-color:crimson;
-  width:100%;
-}
-.NH {
+.links {
   color:white;
   padding-left:20px;
   display:block;
   padding:10px;
+  font-size: 2em;
 }
-.NH:hover {
+.links:hover {
   background-color:darkred;
   padding-left:30px;
   transition: padding-left 0.4s;
@@ -34,83 +41,149 @@ h1 {
   border-style: double;
   border-color: crimson;
 }
-footer {
+.navBottom {
   background-color:crimson;
-  width: 100%;
+  position: fixed;
+  width: 190px;
+  height: 100%;
+  margin-left: 87%;
 }
-.Links {
-  color:white;
-  padding-left:20px;
-  display:block;
-  padding:10px;
+.subtitel {
+  font-size: 3em;
+  color: rgb(102, 82, 92);
 }
-.Links:hover {
-  background-color:darkred;
-  padding-left:30px;
-  transition: padding-left 0.4s;
-  transition: background-color 0.4s;
-  border-style: double;
-  border-color: crimson;
+.subtitel2 {
+  font-size: 3em;
+  margin-top:50px;
 }
-.Choose {
-  color:Black;
-}
-.Text {
-  size:80%
-}
-
-main {
-  margin-left:10%;
-  margin-right:10%;
-  margin-bottom: 5%;
-}
-.img {
+.image {
   display:block;
   width: 450px;
   margin-left:120px;
   margin-top:40px;
   margin-bottom:40px;
 }
-.dankuwel {
-  margin-left: 20px;
+.inhoud {
+  font-size:4em;
 }
-@media only screen and (max-width: 600px) {
-  .img {
-    width: 240px;
-    margin-left: 0px;
-  }
-  body {
-    font-size: 15px;
-  }
-  main {
-    margin-left:5%;
-  }
+.text {
+  font-size:2em;
+  color:rgb(102, 82, 92);
 }
-#myCanvasTop {
-  width:100%;
-  height:30px;
+.imageregion {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: crimson;
+}  
+.line {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Silkscreen', cursive;
+  flex-direction: row;
 }
-#myCanvasBottom {
-  width:100%;
-  height:30px;
-  margin-bottom:-10px;
+.textinfo {
+  background-color: #bababa;
+  border-style: solid;
+  border-color: #898989;
+  width:90%;
+  font-size: 2em;
 }
-li, .dankuwel, .Links, .NH {
-  font-size: 1.5em;
+.poke {
+  display:block;
+  width: 90%;
 }
-.IB:invalid {
-  background-color:rgb(255, 117, 117);
+.textenindex {
+  display:block;
+  text-align:center;
+  width:30%;
 }
 .IB {
   border-style: groove;
   border-width: 4px;
   border-color: rgb(102, 82, 92);
 }
+hr {
+  width: 90%
+}
+.inverted {
+  background-color: rgb(182, 171, 177);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+}
+.textinverted {
+  color:rgb(35, 35, 35);
+}
+@media only screen and (min-width: 601px) {
+  .poke:hover {
+    transform: scale(1.3, 1.3);
+  }
+  .imageregion:hover {
+    transform: scale(2, 2);
+  }
+  .slide:hover {
+    margin-left: 200px;
+  }
+  .slidehalf:hover {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .image {
+    width: 240px;
+    margin-left: 0px;
+  }
+  body {
+    font-size: 6px;
+  }
+  main {
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .Pokemon {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  .textenindex {
+    width:90%;
+  }
+  .navTop {
+    width: 100%;
+    height: 14%;
+    margin-top: -100px;
+  }
+  .navBottom {
+    width: 100%;
+    height: 13%;
+    margin-top: 500px;
+    margin-left: 0%;
+  }
+  .pageNav {
+    display: flex;
+    flex-direction: row;
+  }
+  .linkNav {
+    display: flex;
+    flex-direction: row;
+  }
+  .links {
+    font-size: 1.5em;
+    width: 20%;
+  }
+  h1 {
+    border-width: 10px;
+  }
+  .line {
+    flex-direction: column;
+  }
+}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: rgb(35, 35, 35);
   }
-  h1, li, p, #Choose, h2 {
+  h1, li, p, h2, .inhoud{
     color: rgb(115, 115, 115);
   }
   h1 {
@@ -122,7 +195,7 @@ li, .dankuwel, .Links, .NH {
   .Textx {
     background-color: rgb(54, 54, 54);
   }
-  .IB:invalid {
-    background-color:rgb(183, 115, 115);
+  .inverted {
+    background-color: rgb(102, 82, 92);
   }
 }
