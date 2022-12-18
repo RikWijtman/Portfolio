@@ -14,7 +14,7 @@ body {
 .navTop {
   background-color:crimson;
   width:190px;
-  height: 100%;
+  height: 100vw;
   position:fixed;
 }
 h1 {
@@ -45,7 +45,7 @@ h1 {
   background-color:crimson;
   position: fixed;
   width: 190px;
-  height: 100%;
+  height: 100vw;
   margin-left: 87%;
 }
 .subtitel {
@@ -85,17 +85,16 @@ h1 {
   background-color: #bababa;
   border-style: solid;
   border-color: #898989;
-  width:90%;
   font-size: 2em;
 }
 .poke {
   display:block;
-  width: 90%;
 }
 .textenindex {
   display:block;
   text-align:center;
-  width:30%;
+  width:30vw;
+  margin-right: 2vw;
 }
 .IB {
   border-style: groove;
@@ -103,7 +102,7 @@ h1 {
   border-color: rgb(102, 82, 92);
 }
 hr {
-  width: 90%
+  width: 11vw;
 }
 .inverted {
   background-color: rgb(182, 171, 177);
@@ -114,17 +113,17 @@ hr {
   color:rgb(35, 35, 35);
 }
 @media only screen and (min-width: 601px) {
-  .poke:hover {
-    transform: scale(1.3, 1.3);
-  }
   .imageregion:hover {
-    transform: scale(2, 2);
+    transform: scale(1.6, 1.6);
   }
   .slide:hover {
     margin-left: 200px;
   }
   .slidehalf:hover {
-    margin-left: 100px;
+    margin-left: 110px;
+  }
+  .textenindex, .poke {
+    width: 25vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -147,36 +146,38 @@ hr {
       flex-direction: column;
   }
   .textenindex {
-    width:90%;
+    width:90vw;
   }
   .navTop {
-    width: 100%;
-    height: 14%;
+    width: 100vw;
+    height: 30vw;
     margin-top: -100px;
   }
   .navBottom {
-    width: 100%;
-    height: 13%;
+    width: 100vw;
+    height: 26vw;
     margin-top: 500px;
-    margin-left: 0%;
+    margin-left: 0vw;
   }
-  .pageNav {
-    display: flex;
-    flex-direction: row;
-  }
-  .linkNav {
+  .pageNav, .linkNav {
     display: flex;
     flex-direction: row;
   }
   .links {
     font-size: 1.5em;
-    width: 20%;
+    width: 20vw;
   }
   h1 {
     border-width: 10px;
   }
   .line {
     flex-direction: column;
+  }
+  hr {
+    width: 90vw;
+  }
+  .textenindex, .poke {
+    width:90vw;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -198,4 +199,7 @@ hr {
   .inverted {
     background-color: rgb(102, 82, 92);
   }
+}
+.text:invalid{
+  background-color: rgb(249, 174, 174);
 }
