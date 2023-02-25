@@ -17,6 +17,17 @@ body {
   height: 100vw;
   position:fixed;
 }
+.logo {
+  width: 80px;
+  height: 80px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(236, 208, 205);
+  border-radius: 2px;
+
+  margin-left: 20px;
+  margin-top: 10px;
+}
 h1 {
   display: block;
   font-size:5em;
@@ -50,7 +61,7 @@ h1 {
 }
 .subtitel {
   font-size: 3em;
-  color: rgb(102, 82, 92);
+  color: rgb(15, 1, 8);
 }
 .subtitel2 {
   font-size: 3em;
@@ -68,7 +79,7 @@ h1 {
 }
 .text {
   font-size:2em;
-  color:rgb(102, 82, 92);
+  color:rgb(15, 1, 8);
 }
 .imageregion {
   border-style: solid;
@@ -105,7 +116,7 @@ hr {
   width: 11vw;
 }
 .inverted {
-  background-color: rgb(182, 171, 177);
+  background-color: rgb(190, 178, 180);
   border-radius: 10px;
   padding: 5px 10px 5px 10px;
 }
@@ -197,7 +208,13 @@ hr {
     background-color: rgb(54, 54, 54);
   }
   .inverted {
-    background-color: rgb(102, 82, 92);
+    background-color: rgb(124, 74, 85);
+  }
+  .subtitel,.text {
+    color: rgb(245, 236, 240);
+  }
+  .textinverted {
+    color:rgb(29, 1, 14);
   }
 }
 .text:invalid{
