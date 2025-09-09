@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap');
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 12px;
+  background-color: #d0f8ff;
+  background-image: url('../Images/Background2.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center top;
+}
+
+main {
+  background-color: #d0f8ff;  
+  margin: -40px 10vw 0;
+  background-color: #d0f8ff;
+  /*background-image: url('../Images/background.png');*/
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center top; 
+  
+  border-style:solid;
+  border-width: 5px;
+  border-color: aliceblue;
+}
+
+section {
+  padding: 5vw;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  color: #222;
+  margin: 40px 0 20px 0;
+  text-align: left;
+  padding-left: 40px; /* ruimte aan de linkerkant */
+}
+
+.subtitel {
+  font-size: 2em;
+  color: rgb(15, 1, 8);
+
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.textinverted {
+  color: rgb(35, 35, 35);
+}
+
+.inverted {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  padding: 10px 40px;
+  margin-bottom: 5vh;
+  
+  border-style:solid;
+  border-width: 5px;
+  border-color: aliceblue;
+}
+
+.text {
+  font-size: 1.5em;
+  color: rgb(15, 1, 8);
+
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imagehor {
+  display: block;
+  width: 40vw;
+  margin: 40px auto;
+}
+
+.imagever {
+  display: block;
+  height: 40vw;
+  margin: 40px auto;
+}
+
+.info-row {
+  display: flex;
+  gap: 2vw;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 5vh;
+}
+
+.info-row .inverted {
+  flex: 1 1 0;
+  min-width: 250px;
+}
+
+.skills-slider-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw 4vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  background: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: 5px solid aliceblue;
+  padding: 20px 40px;
+}
+
+.skill-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 120px;
+  background: transparent; /* geen witte achtergrond meer */
+  border-radius: 3px;
+  padding: 20px 10px;
+  gap: 15px;
+  border: none; /* geen border meer */
+}
+
+.skill-slider label {
+  font-size: 2em; /* zelfde als .subtitel (h2) */
+  font-family: "Luckiest Guy", cursive;
+  color: #222;
+  margin-bottom: 0;
+  min-width: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.skill-slider input[type="range"] {
+  width: 240px;
+  height: 24px;
+  border-radius: 2px;
+  background: transparent;
+  outline: none;
+  margin-left: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Custom track */
+.skill-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 24px;
+  border-radius: 2px;
+  background: #bbb;
+}
+.skill-slider input[type="range"]::-moz-range-track {
+  height: 24px;
+  border-radius: 2px;
+  background: #bbb;
+}
+.skill-slider input[type="range"]::-ms-fill-lower,
+.skill-slider input[type="range"]::-ms-fill-upper {
+  height: 24px;
+  border-radius: 2px;
+  background: #bbb;
+}
+
+/* Thumb styling */
+.skill-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 29px;
+  border-radius: 2px;
+  background: #222;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #888;
+  cursor: pointer;
+  margin-top: -2.5px;
+}
+.skill-slider input[type="range"]:disabled::-webkit-slider-thumb {
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* Per skill kleur thumb */
+.skill-slider.unity input[type="range"]::-webkit-slider-thumb {
+  background: #ffb347;
+  border: 2px solid #b97b1a;
+}
+.skill-slider.art input[type="range"]::-webkit-slider-thumb {
+  background: #a3d977;
+  border: 2px solid #5e8c2a;
+}
+.skill-slider.programming input[type="range"]::-webkit-slider-thumb {
+  background: #6ec6ff;
+  border: 2px solid #2176ae;
+}
+.skill-slider.music input[type="range"]::-webkit-slider-thumb {
+  background: #e57373;
+  border: 2px solid #b71c1c;
+}
+.skill-slider.test1 input[type="range"]::-webkit-slider-thumb {
+  background: #b39ddb;
+  border: 2px solid #5e35b1;
+}
+.skill-slider.test2 input[type="range"]::-webkit-slider-thumb {
+  background: #ffd54f;
+  border: 2px solid #fbc02d;
+}
+
+/* Firefox */
+.skill-slider input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 29px;
+  border-radius: 2px;
+  background: #222;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #888;
+  cursor: pointer;
+}
+.skill-slider input[type="range"]:disabled::-moz-range-thumb {
+  cursor: default;
+  opacity: 0.7;
+}
+.skill-slider.unity input[type="range"]::-moz-range-thumb {
+  background: #ffb347;
+  border: 2px solid #b97b1a;
+}
+.skill-slider.art input[type="range"]::-moz-range-thumb {
+  background: #a3d977;
+  border: 2px solid #5e8c2a;
+}
+.skill-slider.programming input[type="range"]::-moz-range-thumb {
+  background: #6ec6ff;
+  border: 2px solid #2176ae;
+}
+.skill-slider.music input[type="range"]::-moz-range-thumb {
+  background: #e57373;
+  border: 2px solid #b71c1c;
+}
+.skill-slider.test1 input[type="range"]::-moz-range-thumb {
+  background: #b39ddb;
+  border: 2px solid #5e35b1;
+}
+.skill-slider.test2 input[type="range"]::-moz-range-thumb {
+  background: #ffd54f;
+  border: 2px solid #fbc02d;
+}
+
+/* Edge/IE */
+.skill-slider input[type="range"]::-ms-thumb {
+  width: 24px;
+  height: 29px;
+  border-radius: 2px;
+  background: #222;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #888;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.skill-slider input[type="range"]:disabled::-ms-thumb {
+  cursor: default;
+  opacity: 0.7;
+}
+.skill-slider.unity input[type="range"]::-ms-thumb {
+  background: #ffb347;
+  border: 2px solid #b97b1a;
+}
+.skill-slider.art input[type="range"]::-ms-thumb {
+  background: #a3d977;
+  border: 2px solid #5e8c2a;
+}
+.skill-slider.programming input[type="range"]::-ms-thumb {
+  background: #6ec6ff;
+  border: 2px solid #2176ae;
+}
+.skill-slider.music input[type="range"]::-ms-thumb {
+  background: #e57373;
+  border: 2px solid #b71c1c;
+}
+.skill-slider.test1 input[type="range"]::-ms-thumb {
+  background: #b39ddb;
+  border: 2px solid #5e35b1;
+}
+.skill-slider.test2 input[type="range"]::-ms-thumb {
+  background: #ffd54f;
+  border: 2px solid #fbc02d;
+}
+
+/* Unity kleur */
+.skill-slider.unity input[type="range"]::-webkit-slider-runnable-track { background: #ffb347; }
+.skill-slider.unity input[type="range"]::-moz-range-track { background: #ffb347; }
+.skill-slider.unity input[type="range"]::-ms-fill-lower,
+.skill-slider.unity input[type="range"]::-ms-fill-upper { background: #ffb347; }
+
+/* Art kleur */
+.skill-slider.art input[type="range"]::-webkit-slider-runnable-track { background: #a3d977; }
+.skill-slider.art input[type="range"]::-moz-range-track { background: #a3d977; }
+.skill-slider.art input[type="range"]::-ms-fill-lower,
+.skill-slider.art input[type="range"]::-ms-fill-upper { background: #a3d977; }
+
+/* Programming kleur */
+.skill-slider.programming input[type="range"]::-webkit-slider-runnable-track { background: #6ec6ff; }
+.skill-slider.programming input[type="range"]::-moz-range-track { background: #6ec6ff; }
+.skill-slider.programming input[type="range"]::-ms-fill-lower,
+.skill-slider.programming input[type="range"]::-ms-fill-upper { background: #6ec6ff; }
+
+/* Music kleur */
+.skill-slider.music input[type="range"]::-webkit-slider-runnable-track { background: #e57373; }
+.skill-slider.music input[type="range"]::-moz-range-track { background: #e57373; }
+.skill-slider.music input[type="range"]::-ms-fill-lower,
+.skill-slider.music input[type="range"]::-ms-fill-upper { background: #e57373; }
+
+/* Test1 kleur */
+.skill-slider.test1 input[type="range"]::-webkit-slider-runnable-track { background: #b39ddb; }
+.skill-slider.test1 input[type="range"]::-moz-range-track { background: #b39ddb; }
+.skill-slider.test1 input[type="range"]::-ms-fill-lower,
+.skill-slider.test1 input[type="range"]::-ms-fill-upper { background: #b39ddb; }
+.skill-slider.test1 input[type="range"] { background: #b39ddb; }
+
+/* Test2 kleur */
+.skill-slider.test2 input[type="range"]::-webkit-slider-runnable-track { background: #ffd54f; }
+.skill-slider.test2 input[type="range"]::-moz-range-track { background: #ffd54f; }
+.skill-slider.test2 input[type="range"]::-ms-fill-lower,
+.skill-slider.test2 input[type="range"]::-ms-fill-upper { background: #ffd54f; }
+.skill-slider.test2 input[type="range"] { background: #ffd54f; }
+
+/* For Firefox */
+.skill-slider input[type="range"] {
+  background: transparent;
+}
+.skill-slider.unity input[type="range"] {
+  background: #ffb347;
+}
+.skill-slider.art input[type="range"] {
+  background: #a3d977;
+}
+.skill-slider.programming input[type="range"] {
+  background: #6ec6ff;
+}
+.skill-slider.music input[type="range"] {
+  background: #e57373;
+}
+
+.projects-title-row {
+  width: 100%;
+  margin: 40px 0 20px 0;
+  text-align: left; /* niet centreren */
+  padding-left: 40px; /* ruimte aan de linkerkant */
+}
+
+.projects-title {
+  font-size: 3em; /* iets groter voor h1 */
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+  text-align: left; /* niet centreren */
+}
+
+/* Centreer h2 van elk project */
+#projects .subtitel {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 6px;
+  }
+
+  main {
+    margin: 100px 20px;
+  }
+
+  h1 {
+    border-width: 10px;
+  }
+
+  .image {
+    width: 240px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .info-row {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .skills-slider-row {
+    grid-template-columns: 1fr;
+    gap: 2vh;
+  }
+}

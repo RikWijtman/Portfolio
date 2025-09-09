@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <main>
+
+    <section>
+        <h1>Rik Wijtman</h1>
+
+        <div class="info-row">
+            <div class="inverted">
+                <h2 class="subtitel textinverted"> Who am I? </h2>
+                <p class="text textinverted">
+                    Hii! I am <strong>Rik Wijtman</strong>, I am currently <strong>19 years old</strong> and study <strong>Creative Media and Game Technologies</strong> at the Hogeschool Rotterdam.
+                    I keep myself busy <strong>making videogames</strong> and <strong>drawing</strong>,
+                    but like to <strong>stay physically active</strong> as well, I go to the <strong>gym</strong> a lot and like to do some <strong>running</strong> once in a while.
+                    Ofcourse I also like to have some <strong>fun with friends</strong> and <strong>sit on the terrace</strong> when the weather is nice.
+                    I currently work on a <strong>terrace</strong> in Delft as <strong>bartender</strong> and <strong>waiter</strong>.
+                </p>
+            </div>
+
+            <div class="inverted">
+                <h2 class="subtitel textinverted"> My Skills: </h2>
+                <p class="text textinverted">
+                    In my <strong>spare time</strong> I work a lot with <strong>Unity</strong>, so I am pretty experienced in <strong>programming with C#</strong>.
+                    Furthermore I am also quite experienced with <strong>javascript</strong> by working on <strong>websites and browser games</strong>.
+                    Besides programming I also enjoy making <strong>art and music for games</strong>, 
+                    For now this mostly goes for <strong>2D games</strong> but I am slowly <strong>expanding</strong> my <strong>skillset</strong>.
+                </p>
+
+                
+            </div>
+            
+        </div>
+
+        <div class="skills-slider-row">
+            <div class="skill-slider unity">
+                <label for="unity-slider">Drawed art</label>
+                <input type="range" id="unity-slider" min="0" max="10" value="7" disabled>
+            </div>
+            <div class="skill-slider art">
+                <label for="art-slider">Pixelart</label>
+                <input type="range" id="art-slider" min="0" max="10" value="9" disabled>
+            </div>
+            <div class="skill-slider programming">
+                <label for="programming-slider">3D Art</label>
+                <input type="range" id="programming-slider" min="0" max="10" value="3" disabled>
+            </div>
+            <div class="skill-slider music">
+                <label for="music-slider">Unity</label>
+                <input type="range" id="music-slider" min="0" max="10" value="8" disabled>
+            </div>
+            <div class="skill-slider test1">
+                <label for="test1-slider">C#</label>
+                <input type="range" id="test1-slider" min="0" max="10" value="7" disabled>
+            </div>
+            <div class="skill-slider test2">
+                <label for="test2-slider">Music</label>
+                <input type="range" id="test2-slider" min="0" max="10" value="6" disabled>
+            </div>
+        </div>
+
+        <div class="projects-title-row">
+            <h1 class="projects-title">My Projects</h1>
+        </div>
+        <div id="projects">
+        </div>
+
+        
+    </section>
+
+    </main>
+    <script>
+fetch('projects.json')
+  .then(response => response.json())
+  .then(projects => {
+    const container = document.getElementById('projects');
+    projects.forEach(project => {
+      const div = document.createElement('div');
+      div.className = 'inverted';
+
+      let html = `<h2 class="subtitel">${project.name}</h2>`;
+      if (project.images && project.images.length > 0) {
+        project.images.forEach(img =>
+          html += `<img class="imagehor" src="${img}" alt="">`
+        );
+      }
+      html += `<p class="text">${project.description}</p>`;
+      if (project.link) {
+        html += `<a class="text" href="${project.link}" target="_blank">${project.name}</a>`;
+      }
+      div.innerHTML = html;
+      container.appendChild(div);
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Turtlecrab adventure",
+    "description": "The first game and project I ever worked on was Turtlecrab adventure. For this game I used GameMaker Studio 2, this is a very simple game engine with it's own language. Turtlecrab Adventure is a 2D sidescrolling platformer where your character has different powerups you can collect. The game has seven normal levels, a boss battle and a secret level as well. Unfortunately I never got to finish the game completely.",
+    "images": [
+      "Images/Turtlecrab1.png",
+      "Images/Turtlecrab2.png",
+      "Images/Turtlecrab3.png"
+    ]
+  },
+  {
+    "name": "Spooked out",
+    "description": "The second game I worked on was Spooked out, this game was made with three others in js excalibur, a simple web based game engine that uses javascript. The game is a 2D dungeon crawler where you go through different rooms and defeat all sorts of ghosts. The game has about 20 different ghosts and about 30 different rooms, as well as three boss battles and a lot of secrets and gimmicks. The goal of the game was to score as many points before you die. All of the art of the game was made by me, as well as some of the smaller gimmicks and boss battles. The game is published as well and fully playable, the link is below.",
+    "images": [
+      "Images/Spookedout.png",
+      "Images/Spookedout2.png",
+      "Images/Spookedout3.png"
+    ],
+    "link": "https://matsdd.github.io/Spooked-Out/"
+  },
+  {
+    "name": "Pokemon Moonja",
+    "description": "Pokemon Moonja was a bigger side project of mine, I worked on this game with a team of about 10 people. We started the project around 2020 and came pretty far, but I eventually left the team because I didn't have any time to spend on this project. To this day the others are still working on the game. For Pokemon Moonja I mostly worked on the designs and some of the spritework of the Pokemon.",
+    "images": [
+      "Images/PokemonMoonja.png",
+      "Images/PokemonMoonja2.png"
+    ]
+  },
+  {
+    "name": "Dove Defenders",
+    "description": "Dove Defenders is a small game also made with js excalibur, the game was meant to be like Bloons Tower Defense. For the people who aren't familiar with the game, you're meant to protect yourself against balloons, in my game these are doves. You can protect yourself using different kinds of towers, like a gunner, sniper etc. only difference in my game is you can give your towers elements, like freezing or burning. The game unfortunately crashed completely after publishing it for my school project, so I am no longer able to access it.",
+    "images": [
+      "Images/DoveDefenders.png"
+    ]
+  },
+  {
+    "name": "Ons Land",
+    "description": "Ons Land, or Our Land in English, is a game we made in a group of five using Unity, this is one of the first 3D games I made. In the game you're meant to build your own farm and harvest all sorts of crops. The game is made to teach people about biodiversity in farms. The game has a day and night cycle, different weather effects and a lot of crops you can grow. With the crops you were able to make different kinds of food as well, like bread, pasta but also beer. For this game I mostly worked on the 2D art and smaller gimmicks, like the weather, day and night cycle and the crafting system. The game unfortunately isn't playable at the moment, but more information about the game is found below.",
+    "images": [
+      "Images/OnsLand.png"
+    ],
+    "link": "https://martijn-kalkman.github.io/land-van-ons-game/"
+  },
+  {
+    "name": "Pokemon Realms",
+    "description": "Pokemon Realms was a game I worked on after Pokemon Moonja, this time I worked on my own, which was a nice change of pace. The only problem was, I had to work with ruby which I never worked with, so the game was mostly based on art and new Pokemon designs. Most of the art in the game was made by me, as well as most of the Pokemon designs. Unfortunately because I won't be able to make any money of this game, I decided to set it on the side and focus on other projects. The first demo is playable, so maybe in the future the game will be published.",
+    "images": [],
+    "link": "https://www.instagram.com/anonymousk1w1/"
+  },
+  {
+    "name": "Reefkeep",
+    "description": "Reefkeep is one of the bigger games I worked on, the game was also made in a group of five and also with Unity. The game is a 2D fishing game where you have to protect and restore your own ecosystem based in the Netherlands. The game has about 20 different fish you can find in your ecosystem, as well as different types of sharks and jellyfish. The USP of the game was the use of machine learning, all the fish in the game are controlled by AI. So when the fish doesn't like your ecosystem he can decide to leave. The game was made to support the SDG Life below water. For this game I mostly worked on the 2D art and animations. The game is unfortunately not playable at the moment, but we're planning to maybe revisit this project in the future.",
+    "images": [
+        "Images/Reefkeep1.webp",
+        "Images/Reefkeep2.webp"
+    ],
+    "link": "https://cmgt.hr.nl/projecten/Reefkeep"
+  },
+  {
+    "name": "Drifted",
+    "description": "Drifted is the game I am currently working on the most, and also my biggest game so far. The game is a 2D exploration, fishing, story game made in Unity. The game is about three friends going on a fishing trip in the open waters. But during their trip a huge storm takes over their ship and they end up stranded on a mysterious island. From here you have to survive, explore and defend yourself against all sorts of danger. The game has a lot of different biomes you can explore, as well as a lot of different fish you can catch. The game also has a lot of gimmicks like abilities, crafting and all sorts of boss battles. Since I am working on this game all on my own, I work on the art, programming and music. The game is still in development, but a demo is planned around end 2025, begin 2026. If you want to stay updated on the game, please check out the link below.",
+    "images": [
+      "Images/Drifted1.png",
+      "Images/Drifted2.png"
+    ],
+    "link": "https://www.instagram.com/bederebruda/"
+  }
+]
