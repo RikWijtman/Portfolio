@@ -71,10 +71,10 @@
     "name": "Flop 'n Drop",
     "description": "Flop 'n Drop is a small mobile game I made in Unity, I made the game with four others during our game development minor. In the game you play as a fish that escaped a fishingboat, now you have to get as far away from the boat as possible. You do this by dropping from platform to platform towards the bottom of the sea, during this adventure you come across different biomes and creatures. The game is published on itch, the link is below:",
     "images": [
-      "Images/Flopndrop1.png",
-      "Images/Flopndrop2.png",
-      "Images/Flopndrop3.png",
-      "Images/Flopndrop4.png"
+      "Images/FlopnDrop1.png",
+      "Images/FlopnDrop2.png",
+      "Images/FlopnDrop3.png",
+      "Images/FlopnDrop4.png"
     ],
     "link": "https://roel204.itch.io/flopndrop"
   }
