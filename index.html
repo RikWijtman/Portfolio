@@ -87,12 +87,22 @@ fetch('projects.json')
       div.className = 'inverted';
 
       let html = `<h2 class="subtitel">${project.name}</h2>`;
+
       if (project.images && project.images.length > 0) {
-        project.images.forEach(img =>
-          html += `<img class="imagehor" src="${img}" alt="">`
-        );
+        if (project.images.length === 1) {
+          html += `<div class="project-images project-images--single">
+            <img class="imagehor" src="${project.images[0]}" alt="">
+          </div>`;
+        } else {
+          html += `<div class="project-images">`;
+          project.images.forEach(img =>
+            html += `<img class="imagehor" src="${img}" alt="">`
+          );
+          html += `</div>`;
+        }
       }
-      html += `<p class="text">${project.description}</p>`;
+
+      html += `<p class="text">${project.description || ''}</p>`;
       if (project.link) {
         html += `<a class="text" href="${project.link}" target="_blank">${project.name}</a>`;
       }

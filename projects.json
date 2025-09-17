@@ -28,9 +28,11 @@
   },
   {
     "name": "Dove Defenders",
-    "description": "Dove Defenders is a small game also made with js excalibur, the game was meant to be like Bloons Tower Defense. For the people who aren't familiar with the game, you're meant to protect yourself against balloons, in my game these are doves. You can protect yourself using different kinds of towers, like a gunner, sniper etc. only difference in my game is you can give your towers elements, like freezing or burning. The game unfortunately crashed completely after publishing it for my school project, so I am no longer able to access it.",
+    "description": "Dove Defenders is a small game also made with js excalibur, the game was meant to be like Bloons Tower Defense. For the people who aren't familiar with the game, you're meant to protect yourself against balloons, in my game these are doves. You can protect yourself using different kinds of towers, like a gunner, sniper etc. only difference in my game is you can give your towers elements, like freezing or burning. The game unfortunately isn't publicly available at the moment. But I may revisit the project in the future.",
     "images": [
-      "Images/DoveDefenders.png"
+      "Images/DoveDefenders.png",
+      "Images/DoveDefenders2.png",
+      "Images/DoveDefenders3.png"
     ]
   },
   {
@@ -64,5 +66,16 @@
       "Images/Drifted2.png"
     ],
     "link": "https://www.instagram.com/bederebruda/"
+  },
+  {
+    "name": "Flop 'n Drop",
+    "description": "Flop 'n Drop is a small mobile game I made in Unity, I made the game with four others during our game development minor. In the game you play as a fish that escaped a fishingboat, now you have to get as far away from the boat as possible. You do this by dropping from platform to platform towards the bottom of the sea, during this adventure you come across different biomes and creatures. The game is published on itch, the link is below:",
+    "images": [
+      "Images/Flopndrop1.png",
+      "Images/Flopndrop2.png",
+      "Images/Flopndrop3.png",
+      "Images/Flopndrop4.png"
+    ],
+    "link": "https://roel204.itch.io/flopndrop"
   }
 ]

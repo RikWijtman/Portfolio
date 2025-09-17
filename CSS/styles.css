@@ -81,8 +81,10 @@ h1 {
 
 .imagehor {
   display: block;
-  width: 40vw;
-  margin: 40px auto;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  height: auto;
 }
 
 .imagever {
@@ -370,6 +372,20 @@ h1 {
   width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  margin: 40px 0;
+}
+
+.project-images--single {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 @media only screen and (max-width: 600px) {
